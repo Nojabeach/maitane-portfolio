@@ -320,21 +320,66 @@ export default function Portfolio() {
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {portfolioData.skills.slice(0, 8).map((skill, index) => (
-                      <div key={skill.name} className="space-y-2">
-                        <div className="flex justify-between items-center">
-                          <span className="text-white font-medium">{skill.name}</span>
-                          <Badge variant="outline" className="text-xs">
-                            {skill.category}
-                          </Badge>
+                    {portfolioData.skills.slice(0, 8).map((skill, index) => {
+                      // Colores vibrantes para diferentes tecnologías
+                      const getSkillColor = (skillName: string, index: number) => {
+                        const colors = [
+                          'from-blue-500 to-blue-600',
+                          'from-green-500 to-green-600', 
+                          'from-purple-500 to-purple-600',
+                          'from-orange-500 to-orange-600',
+                          'from-cyan-500 to-cyan-600',
+                          'from-pink-500 to-pink-600',
+                          'from-yellow-500 to-yellow-600',
+                          'from-red-500 to-red-600'
+                        ];
+                        return colors[index % colors.length];
+                      };
+
+                      const getTextColor = (index: number) => {
+                        const textColors = [
+                          'text-blue-400',
+                          'text-green-400',
+                          'text-purple-400', 
+                          'text-orange-400',
+                          'text-cyan-400',
+                          'text-pink-400',
+                          'text-yellow-400',
+                          'text-red-400'
+                        ];
+                        return textColors[index % textColors.length];
+                      };
+
+                      return (
+                        <div key={skill.name} className="space-y-3 group">
+                          <div className="flex justify-between items-center">
+                            <span className="text-white font-medium group-hover:text-gray-200 transition-colors">{skill.name}</span>
+                            <Badge variant="outline" className={`text-xs border-slate-600 ${getTextColor(index)}`}>
+                              {skill.category}
+                            </Badge>
+                          </div>
+                                                     <div className="relative skill-glow">
+                             <div className="h-4 bg-slate-800 rounded-full overflow-hidden shadow-inner border border-slate-700">
+                               <div 
+                                 className={`skill-bar h-full bg-gradient-to-r ${getSkillColor(skill.name, index)} rounded-full shadow-lg relative`}
+                                 style={{ 
+                                   '--skill-width': `${skill.level}%`,
+                                   width: `${skill.level}%`
+                                 } as React.CSSProperties}
+                               >
+                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent rounded-full"></div>
+                                 <div className="absolute inset-0 bg-white/10 rounded-full animate-pulse"></div>
+                               </div>
+                             </div>
+                             {/* Efecto de brillo adicional */}
+                             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                           </div>
+                          <div className={`text-right ${getTextColor(index)} text-sm font-bold`}>
+                            {skill.level}%
+                          </div>
                         </div>
-                        <Progress 
-                          value={skill.level} 
-                          className="h-2 bg-slate-700"
-                        />
-                        <div className="text-right text-blue-400 text-sm font-medium">{skill.level}%</div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </CardContent>
               </Card>
