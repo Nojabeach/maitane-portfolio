@@ -15,7 +15,7 @@ export const PORTFOLIO_CONFIG = {
     // 🔗 REDES SOCIALES
     social: {
       linkedin: "https://www.linkedin.com/in/maitane-ibanez-irazabal/",
-      github: "https://github.com/maitaneibanez", // Actualiza con tu GitHub real
+      github: "https://github.com/Nojabeach", // URL correcta actualizada
       email: "mailto:maitaneibaira@gmail.com",
       twitter: "", // Opcional
     },
