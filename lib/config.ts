@@ -10,13 +10,13 @@ export const PORTFOLIO_CONFIG = {
     description:
       "Analista orgánico y programadora informática con más de 17 años de experiencia en desarrollo de software, especializada en tecnologías Microsoft, desarrollo Android y arquitecturas backend robustas",
     location: "País Vasco, España",
-    email: "maitane.ibanez.irazabal@gmail.com",
+    email: "maitaneibaira@gmail.com",
 
     // 🔗 REDES SOCIALES
     social: {
       linkedin: "https://www.linkedin.com/in/maitane-ibanez-irazabal/",
       github: "https://github.com/maitaneibanez", // Actualiza con tu GitHub real
-      email: "mailto:maitane.ibanez.irazabal@gmail.com",
+      email: "mailto:maitaneibaira@gmail.com",
       twitter: "", // Opcional
     },
 
@@ -95,6 +95,28 @@ export const PORTFOLIO_CONFIG = {
 
   // 🚀 PROYECTOS
   projects: [
+    {
+      title: "UmeEgunero - TFG 2º DAM",
+      description:
+        "Aplicación Android nativa desarrollada con Kotlin y Jetpack Compose para la comunicación entre centros educativos y familias. Sistema completo con notificaciones push, confirmación de lectura, gestión de usuarios y Cloud Functions integradas con Firebase.",
+      image: "/images/projects/umeegunero.jpg",
+      technologies: ["Kotlin", "Jetpack Compose", "Firebase", "Cloud Functions", "Android Studio", "Google Apps Script", "Firestore", "FCM"],
+      github: "https://github.com/Nojabeach/UmeEgunero",
+      demo: "#",
+      featured: true,
+      status: "completed",
+    },
+    {
+      title: "Aisialdia - Proyecto 1º DAM",
+      description:
+        "Proyecto desarrollado durante el primer curso de Desarrollo de Aplicaciones Multiplataforma. Aplicación que demuestra los conocimientos adquiridos en programación orientada a objetos, bases de datos y desarrollo de interfaces.",
+      image: "/images/projects/aisialdia.jpg",
+      technologies: ["Java", "Android", "SQLite", "XML", "Android Studio"],
+      github: "https://github.com/Nojabeach/Aisialdia",
+      demo: "#",
+      featured: true,
+      status: "completed",
+    },
     {
       title: "Sistema ERP Productos Tubulares",
       description:
@@ -195,6 +217,65 @@ export const PORTFOLIO_CONFIG = {
         "Bases de Datos",
       ],
       status: "completed", // recién completado
+    },
+    {
+      title: "Curso Usuario Avanzado SAP",
+      institution: "Ibermática S.A. (Consultora Tecnológica)",
+      period: "2020 - 2021",
+      description:
+        "Formación especializada en el uso avanzado de SAP, sistema de planificación de recursos empresariales, impartida por la consultora tecnológica Ibermática S.A.",
+      technologies: [
+        "SAP",
+        "ERP",
+        "Gestión Empresarial",
+        "Planificación de Recursos",
+        "Sistemas Empresariales",
+      ],
+      status: "completed",
+    },
+    {
+      title: "Maestra en Especialidad en Educación Infantil",
+      institution: "Universidad del País Vasco (UPV/EHU)",
+      period: "2003 - 2005",
+      description:
+        "Titulación universitaria especializada en Educación Infantil, proporcionando una base sólida en pedagogía y desarrollo infantil que complementa mis habilidades técnicas con competencias educativas y de comunicación.",
+      technologies: [
+        "Pedagogía",
+        "Desarrollo Infantil",
+        "Metodologías Educativas",
+        "Comunicación",
+        "Gestión de Grupos",
+      ],
+      status: "completed",
+    },
+    {
+      title: "Master en Programación (50h.)",
+      institution: "Centro Informático Meatze (Barakaldo)",
+      period: "2004",
+      description:
+        "Formación intensiva en programación que consolidó mis conocimientos técnicos y me preparó para el desarrollo profesional en el sector informático.",
+      technologies: [
+        "Programación",
+        "Desarrollo de Software",
+        "Metodologías de Programación",
+        "Análisis de Sistemas",
+      ],
+      status: "completed",
+    },
+    {
+      title: "Técnico en Programación de Gestión (1000h.)",
+      institution: "A.E.C.E.I. - Centro Informático Meatze (Barakaldo)",
+      period: "2001 - 2003",
+      description:
+        "Formación técnica completa que estableció las bases de mi carrera profesional en programación y desarrollo de aplicaciones de gestión empresarial.",
+      technologies: [
+        "Programación de Gestión",
+        "Bases de Datos",
+        "Sistemas de Información",
+        "Desarrollo de Aplicaciones",
+        "Análisis Funcional",
+      ],
+      status: "completed",
     },
   ],
 

@@ -39,7 +39,7 @@ const portfolioData = PORTFOLIO_CONFIG
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("inicio")
   const [selectedProject, setSelectedProject] = useState(null)
-  const [commentForm, setCommentForm] = useState({ name: "", email: "", message: "", projectId: null })
+  const [commentForm, setCommentForm] = useState({ name: "", email: "", message: "", projectId: null as number | null })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const scrollToSection = (sectionId: string) => {
@@ -521,28 +521,7 @@ export default function Portfolio() {
                       ))}
                     </div>
 
-                    <div className="flex items-center justify-between">
-                      <div className="flex gap-3">
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-white transition-colors"
-                          onClick={() => window.open(project.github, "_blank")}
-                        >
-                          <Github className="w-4 h-4 mr-2" />
-                          Código
-                        </Button>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="border-slate-600 text-slate-300 hover:bg-slate-700 hover:text-white transition-colors"
-                          onClick={() => window.open(project.demo, "_blank")}
-                        >
-                          <ExternalLink className="w-4 h-4 mr-2" />
-                          Demo
-                        </Button>
-                      </div>
-
+                    <div className="flex items-center justify-end">
                       <Button
                         variant="ghost"
                         size="sm"
