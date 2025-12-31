@@ -6,9 +6,9 @@ export const PORTFOLIO_CONFIG = {
   personal: {
     name: "Maitane Ibáñez Irazabal",
     title: "Analista Orgánico & Programadora Informática",
-    subtitle: "SQL Server • Java • Android • Kotlin • Spring Boot",
+    subtitle: "TypeScript • React 19 • SQL Server • Java • Android • Kotlin • Spring Boot",
     description:
-      "Analista orgánico y programadora informática con más de 17 años de experiencia en desarrollo de software, especializada en tecnologías Microsoft, desarrollo Android y arquitecturas backend robustas",
+      "Analista orgánico y programadora informática con más de 17 años de experiencia. Especializada en la creación de aplicaciones modernas con React, TypeScript y Android, así como en arquitecturas backend robustas y optimización de bases de datos SQL Server.",
     location: "País Vasco, España",
     email: "maitaneibaira@gmail.com",
 
@@ -23,28 +23,21 @@ export const PORTFOLIO_CONFIG = {
     // 🖼️ IMÁGENES
     images: {
       profile:
-        "https://firebasestorage.googleapis.com/v0/b/umeegunero.firebasestorage.app/o/mi_imagen.jpeg?alt=media&token=07554b75-a97c-455a-96b1-33e089230a7a", // Tu foto real
+        "https://avatars.githubusercontent.com/u/147870218?v=4", // Tu foto real actualizada
       hero: "/images/hero-bg.jpg", // Imagen de fondo opcional
     },
   },
 
   // 🛠️ HABILIDADES TÉCNICAS
   skills: [
+    { name: "TypeScript", level: 88, category: "Frontend", color: "blue" },
+    { name: "React 19 / Vite", level: 90, category: "Frontend", color: "blue" },
+    { name: "Tailwind CSS", level: 85, category: "Frontend", color: "cyan" },
+    { name: "Supabase / Firebase", level: 85, category: "Backend", color: "green" },
+    { name: "Generative AI (Gemini)", level: 80, category: "AI", color: "purple" },
     { name: "Microsoft SQL Server", level: 95, category: "Database", color: "blue" },
-    { name: "Java", level: 90, category: "Backend", color: "orange" },
-    { name: "Spring Boot", level: 88, category: "Backend", color: "green" },
-    { name: "Android", level: 85, category: "Mobile", color: "green" },
-    { name: "Kotlin", level: 85, category: "Mobile", color: "purple" },
-    { name: "Spring MVC", level: 82, category: "Backend", color: "green" },
-    { name: "Git/GitFlow", level: 80, category: "DevOps", color: "red" },
-    { name: "HTML5/CSS3", level: 78, category: "Frontend", color: "orange" },
-    { name: "T-SQL Avanzado", level: 92, category: "Database", color: "blue" },
-    { name: "SAP Integration", level: 85, category: "Enterprise", color: "yellow" },
-    { name: "IIS Management", level: 80, category: "DevOps", color: "blue" },
-    { name: "Industrial Systems", level: 88, category: "Enterprise", color: "gray" },
-    { name: "React 19 / Vite", level: 85, category: "Frontend", color: "blue" },
-    { name: "Supabase", level: 80, category: "Backend", color: "green" },
-    { name: "Generative AI (Gemini)", level: 75, category: "AI", color: "purple" },
+    { name: "Java / Spring Boot", level: 90, category: "Backend", color: "orange" },
+    { name: "Android / Kotlin", level: 88, category: "Mobile", color: "green" },
   ],
 
   // 💼 EXPERIENCIA LABORAL
