@@ -42,6 +42,9 @@ export const PORTFOLIO_CONFIG = {
     { name: "SAP Integration", level: 85, category: "Enterprise", color: "yellow" },
     { name: "IIS Management", level: 80, category: "DevOps", color: "blue" },
     { name: "Industrial Systems", level: 88, category: "Enterprise", color: "gray" },
+    { name: "React 19 / Vite", level: 85, category: "Frontend", color: "blue" },
+    { name: "Supabase", level: 80, category: "Backend", color: "green" },
+    { name: "Generative AI (Gemini)", level: 75, category: "AI", color: "purple" },
   ],
 
   // 💼 EXPERIENCIA LABORAL
@@ -95,6 +98,17 @@ export const PORTFOLIO_CONFIG = {
 
   // 🚀 PROYECTOS
   projects: [
+    {
+      title: "Vitality - AI Fitness & Wellness PWA",
+      description:
+        "Acompañante de fitness inteligente (Coach Vitality) diseñado como una PWA de alto rendimiento con React 19. Incluye módulos de entrenamiento, nutrición e hidratación con asistencia impulsada por IA (Gemini). Optimizada para iOS y cumplimiento de estándares Lighthouse con arquitectura limpia.",
+      image: "/images/projects/vitality.png",
+      technologies: ["React 19", "TypeScript", "Vite", "Gemini API", "Supabase", "Tailwind CSS", "PWA"],
+      github: "https://github.com/Nojabeach/maigymios",
+      demo: "https://vitality-ai.web.app", // Placeholder or real demo if known
+      featured: true,
+      status: "completed",
+    },
     {
       title: "UmeEgunero - TFG 2º DAM",
       description:
